@@ -51,7 +51,7 @@ function SignUp() {
                     <p>Email</p>
                     <input type="text" onChange={inputEmail} name="" placeholder="Enter email" id="" />
                     <p>Password</p>
-                    <input type="text" onChange={inputPassword} name="" placeholder="Enter Password" id="" />
+                    <input type="password" onChange={inputPassword} name="" placeholder="Enter Password" id="" />
                     <button onClick={signUpButton} class="signup-button">
                         Sign up
                     </button>
