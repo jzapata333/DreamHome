@@ -47,17 +47,17 @@ function SignUp() {
 
                     <p class="head">Sign up</p>
                     <p>Username</p>
-                    <input type="text" onChange={inputUserName} name="" placeholder="Enter email" id="" />
+                    <input type="text" onChange={inputUserName} name="" placeholder="Enter your username" id="" />
                     <p>Email</p>
-                    <input type="text" onChange={inputEmail} name="" placeholder="Enter email" id="" />
+                    <input type="text" onChange={inputEmail} name="" placeholder="Enter your email" id="" />
                     <p>Password</p>
-                    <input type="password" onChange={inputPassword} name="" placeholder="Enter Password" id="" />
-                    <button onClick={signUpButton} class="signup-button">
+                    <input type="password" onChange={inputPassword} name="" placeholder="Enter your password" id="" />
+                    <button className="signup-submit" onClick={signUpButton} class="signup-button">
                         Sign up
                     </button>
                     <div class="foot"></div>
                     <button class="text" onClick={() => dispatch(push('/signin'))}>
-                        Already an Customer SignIn
+                        <p>Already have an account? <span className="signin-svc-button">Sign in</span></p>
                     </button>
                 </div>
             </div>
