@@ -56,8 +56,8 @@ function SignUp() {
                         Sign up
                     </button>
                     <div class="foot"></div>
-                    <button class="text" onClick={() => dispatch(push('/signin'))}>
-                        <p>Already have an account? <span className="signin-svc-button">Sign in</span></p>
+                    <button className="text" onClick={() => dispatch(push('/signin'))}>
+                        <p className="signin-svc">Already have an account? <span className="signin-svc-button">Sign in</span></p>
                     </button>
                 </div>
             </div>

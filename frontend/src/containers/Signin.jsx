@@ -36,8 +36,9 @@ function Signin() {
             <MainImage />
             <div class="main2">
                 <div class="signin">
-                    <img onClick={closeButton} class="close" src={ImgCloseIcon} alt="" />
+                    <br />
                     <img class="logo" src={ImgLogoIcon} alt="" />
+                    <p className="head">Welcome</p>
                     <p class="head">Sign in</p>
                     <p>Email</p>
                     <input type="text" onChange={inputEmail} name="" placeholder="Enter email" value={email} id="" />
@@ -50,10 +51,12 @@ function Signin() {
                         value={password}
                         id=""
                     />
-                    <button onClick={signInButton}>Sign in</button>
-                    <a class="joinus" href="/signup">
-                        JOIN US
-                    </a>
+                    <button className="" onClick={signInButton}>Sign in</button>
+                    {/* <a class="joinus" href="/signup"> */}
+                        {/* <span className="joinus" onClick={() => dispatch(push("/signup"))}>JOIN US</span> */}
+                        <p className="joinus">Don't have an account? Create one <span onClick={() => dispatch(push('/signup'))} style={{textDecoration: 'underline', color: '#3377cc', cursor: 'pointer'}}>here</span></p>
+                        
+                    {/* </a> */}
                 </div>
             </div>
         </div>

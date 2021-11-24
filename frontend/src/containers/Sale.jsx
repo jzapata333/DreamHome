@@ -38,13 +38,13 @@ function Sale() {
             <section class="sell">
                 <SaleImage />
                 <article class="text">
-                    <h1>Sell your home directly to get counselling.</h1>
+                    <h1>Sell your home directly with Dream House</h1>
                     <p>
                         Getting a competitive cash offer from Dream House is an easy path to sell your home, with more
                         control and less prepwork. You sell your home as-is and get paid with no surprises, while we
                         take care of the rest.
                     </p>
-                    <h3>Input your information to get counselling.</h3>
+                    <h3>Input your information to get counseling.</h3>
                 </article>
                 <div class="form">
                     <h2>Property Address</h2>

@@ -21,7 +21,7 @@ function MainImage() {
                 <img class="background" src={ImageBackgroundMain} alt="" />
                 <div class="search">
                     <img onClick={() => submitAction(search)} src={ImgSearchIcon} alt="" />
-                    <input onChange={inputFind} type="text" name="" placeholder="Search" id="search" />
+                    <input onChange={inputFind} type="text" name="" placeholder="Address, city or state" id="search" />
                 </div>
                 <article class="text">
                     <h1>

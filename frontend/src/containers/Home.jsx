@@ -50,7 +50,7 @@ const Home = () => {
             </section>
             <section class="explore">
                 <div>
-                    <h4>Explore home on Dream house</h4>
+                    <h4>Explore homes on Dream House</h4>
                 </div>
                 <div class="images">
                     <ul class="column">
@@ -63,7 +63,7 @@ const Home = () => {
                                             <h1>{home.address}</h1>
                                         </div>
                                         <button id="vh" onClick={() => clickHome(home.id)}>
-                                            View homes
+                                            View more
                                         </button>
                                     </li>
                                 ))}
