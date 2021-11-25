@@ -265,13 +265,14 @@ img.close {
 
 .main .search input#search {
     position: relative;
-    width: 82%;
+    width: 90%;
     padding: 4.3% 42.3% 4.3% 11%;
     font-size: 12px;
     border: 0;
-    border-radius: 7px;
+    border-radius: 10px;
     opacity: 0.9;
     color: #50504f;
+    outline: none;
 }
 
 .main article.text {

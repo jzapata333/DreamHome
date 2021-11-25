@@ -8,7 +8,7 @@ export default function CategoryCard({ tag }) {
     // const key = localStorage.getItem('LOGIN_USER_KEY');
     const pushTotag = tagId => {
         // if (key) {
-        if (tagId == 8) {
+        if (tag.type == 'Sell') {
             dispatch(push('/sale'));
         } else {
             dispatch(push('/search?tag_id=' + tagId));

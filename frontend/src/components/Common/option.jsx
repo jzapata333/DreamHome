@@ -34,12 +34,12 @@ function Option({ setShowOption }) {
                             {checkUser && <p>{user.user_name}</p>}
                         </li>
                         <li onClick={() => dispatch(push('/saved'))} class="first">
-                            Saved house
+                            Favorites
                         </li>
-                        <li onClick={() => dispatch(push('/search?tag_id=9'))}>Buy a house</li>
-                        <li onClick={() => dispatch(push('/sale'))}>Sell a house</li>
+                        <li onClick={() => dispatch(push('/search?tag_id=9'))}>Buy</li>
+                        <li onClick={() => dispatch(push('/sale'))}>Sell</li>
                         <li onClick={() => dispatch(push('/search?tag_id=7'))} class="first">
-                            Rent a house
+                            Rent
                         </li>
                         <li onClick={signOutButton}>Log Out</li>
                     </ul>
