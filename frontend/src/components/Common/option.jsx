@@ -9,9 +9,9 @@ import { push } from 'connected-react-router';
 function Option({ setShowOption }) {
     const dispatch = useDispatch();
     const selector = useSelector(state => state);
-    const key = localStorage.getItem('LOGIN_USER_KEY');
+    const key = localStorage.getItem('HOME_LOGIN_USER_KEY');
     const [checkUser, setCheckUser] = useState(false);
-    const user = JSON.parse(localStorage.getItem('LOGIN_USER_KEY'));
+    const user = JSON.parse(localStorage.getItem('HOME_LOGIN_USER_KEY'));
 
     const signOutButton = () => {
         dispatch(signOut());
