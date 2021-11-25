@@ -1,7 +1,6 @@
 const initialState = {
     homes: {
         list: [],
-        hasNext: true
     },
     saved: {
         list: []
