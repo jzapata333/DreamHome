@@ -37,6 +37,7 @@ function Signin() {
             <div class="main2">
                 <div class="signin">
                     <br />
+                    <img onClick={closeButton} class="close" src={ImgCloseIcon} alt="" />
                     <img class="logo" src={ImgLogoIcon} alt="" />
                     <p className="head">Welcome</p>
                     <p class="head">Sign in</p>
