@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { signUp } from '../reducks/users/operations';
-import ImgLogoIcon from '../assets/img/icon-logo.svg';
+import ImgLogoIcon from '../assets/img/dh.png';
 import ImgCloseIcon from '../assets/img/icon-close.svg';
 import MainImage from '../components/Common/MainImage';
 import { push } from 'connected-react-router';
@@ -43,8 +43,7 @@ function SignUp() {
             <div class="main2">
                 <div class="signin">
                     <img onClick={closeButton} class="close" src={ImgCloseIcon} alt="" />
-                    <img class="logo" src={ImgLogoIcon} alt="" />
-
+                    <img class="logo signup" src={ImgLogoIcon} alt="" />
                     <p class="head">Sign up</p>
                     <p>Username</p>
                     <input type="text" onChange={inputUserName} name="" placeholder="Enter your username" id="" />
@@ -56,9 +55,7 @@ function SignUp() {
                         Sign up
                     </button>
                     <div class="foot"></div>
-                    <button className="text" onClick={() => dispatch(push('/signin'))}>
-                        <p className="signin-svc">Already have an account? <span className="signin-svc-button">Sign in</span></p>
-                    </button>
+                    <p id="joinus">Already have an account? <span onClick={() => dispatch(push('/signin'))} style={{textDecoration: 'underline', color: '#3377cc', cursor: 'pointer'}}>Sign in</span></p>
                 </div>
             </div>
         </div>

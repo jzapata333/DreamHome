@@ -14,10 +14,6 @@ body {
     background-color: #fefefe;
 }
 
-li {
-    cursor: pointer;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -126,6 +122,7 @@ a {
 
 .header2 .drop-down img {
     width: 62%;
+    cursor: pointer;
 }
 
 .header2 .drop-down button {
@@ -134,6 +131,10 @@ a {
     padding: 0;
     border: 0;
     background: none;
+}
+
+.options-li {
+    cursor: pointer;
 }
 
 footer.foot {
@@ -169,10 +170,22 @@ footer.foot {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+#vh:hover {
+    background-color: #eee8d5;
+    opacity: 0.8;
+}
+
 .header2 img.logo {
     cursor: pointer;
     width: 12%;
+    height: 92%;
     padding-left: 3%;
+}
+
+@media all and (max-width: 1024px) {
+    .header2 img.logo {
+        width: 20%;
+    }
 }
 
 img.background {
@@ -186,6 +199,9 @@ img.background {
 }
 
 img.close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
     margin: 3% 0 0 90%;
     width: 7%;
 }
@@ -212,7 +228,7 @@ img.close {
     }
 
     .header2 img.logo {
-        width: 32%;
+        width: 45%;
     }
 
     .header2 .search {
@@ -262,6 +278,7 @@ img.close {
     top: 7%;
     left: 100%;
     z-index: 5;
+    cursor: pointer;
 }
 
 .main .search input#search {
@@ -441,6 +458,10 @@ img.close {
     border: none;
     color: white;
     border-radius: 8px;
+}
+
+.option .icons .home button:hover {
+    background-color: #2e2d2d;
 }
 
 .option .icons .home .sell {
@@ -760,7 +781,7 @@ footer p {
 
 .main2 .signin {
     position: absolute;
-    background-color: rgba(255, 255, 255);
+    background-color: #fefefe;
     background-attachment: fixed;
     top: 28%;
     left: 40%;
@@ -782,6 +803,12 @@ footer p {
     padding: 12px 0 0 20px;
 }
 
+#joinus {
+    font-size: small;
+    padding: 5%;
+    text-align: center !important;
+}
+
 .main2 .signin input[type='text'] {
     margin: 2% 0 0 7%;
     width: 80%;
@@ -800,24 +827,32 @@ footer p {
     border: 0;
 }
 .main2 .signin button {
+    cursor: pointer;
     margin: 4% 9%;
-    padding: 4% 32%;
+    padding: 4% 30%;
     font-size: 98%;
     border: 0;
+    border-radius: 8px;
     background-color: #0d3cf5;
     color: rgba(255, 255, 255);
 }
 
+.main2 .signin button:hover {
+    background-color: #0f31ab;
+}
+
 .main2 .signin button.signup-button {
     margin: 4% 9.2%;
-    margin-left: 30%;
-    padding: 4% 10.6%;
-
+    padding: 4% 30%;
     border-radius: 8px;
     font-size: 90%;
     border: 0;
     background-color: #0d3cf5;
     color: rgba(255, 255, 255);
+}
+
+.main2 .signin button.signup-button:hover {
+    background-color: #0f31ab;
 }
 
 .main2 .options {
@@ -856,6 +891,10 @@ footer p {
 .main2 img.logo {
     width: 60%;
     margin: auto 20%;
+}
+
+.main2 img.logo.signup {
+    padding-top: 7.5%;
 }
 
 .main2 .signin button.text {
@@ -941,9 +980,8 @@ footer p {
 
 .buy {
     width: 100%;
-
     margin: 0;
-    background-color: rgb(242, 242, 242);
+    background-color: #fefefe;
     background-size: 100% 100%;
 }
 
@@ -1081,13 +1119,19 @@ footer p {
 }
 
 .sell input[type='submit'] {
+    cursor: pointer;
     color: white;
-    background-color: #2044db;
+    background-color: #0d3cf5;
     font-size: 20px;
     border: 0;
+    border-radius: 8px;
     padding: 0.8% 4%;
     margin-top: 4%;
 }
+
+.sell input[type='submit']:hover {
+    background-color: #0f31ab;
+} 
 
 .sell input[type='number'] {
     margin: 1% auto;
@@ -1190,6 +1234,7 @@ section.preview {
 }
 
 .preview th {
+    font-family: robo;
     text-align: justify;
     font-weight: unset;
 }
@@ -1214,6 +1259,10 @@ section.preview {
     border-radius: 8px;
     padding: 2% 4% 2% 4%;
     font-size: 17px;
+}
+
+.preview button.gc:hover {
+    background-color: #2e2d2d;
 }
 
 .preview button a {

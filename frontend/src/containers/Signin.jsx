@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { signIn } from '../reducks/users/operations';
-import ImgLogoIcon from '../assets/img/icon-logo.svg';
+import ImgLogoIcon from '../assets/img/dh.png';
 import ImgCloseIcon from '../assets/img/icon-close.svg';
 import MainImage from '../components/Common/MainImage';
 import { push } from 'connected-react-router';
@@ -35,7 +35,7 @@ function Signin() {
         <div>
             <MainImage />
             <div class="main2">
-                <div class="signin">
+                <div class="signin" id="signin">
                     <br />
                     <img onClick={closeButton} class="close" src={ImgCloseIcon} alt="" />
                     <img class="logo" src={ImgLogoIcon} alt="" />
@@ -52,12 +52,10 @@ function Signin() {
                         value={password}
                         id=""
                     />
-                    <button className="" onClick={signInButton}>Sign in</button>
-                    {/* <a class="joinus" href="/signup"> */}
+                    <button id="signin-button" onClick={signInButton}>Sign in</button>
                         {/* <span className="joinus" onClick={() => dispatch(push("/signup"))}>JOIN US</span> */}
-                        <p className="joinus">Don't have an account? Create one <span onClick={() => dispatch(push('/signup'))} style={{textDecoration: 'underline', color: '#3377cc', cursor: 'pointer'}}>here</span></p>
+                        <p id="joinus">Don't have an account? Create one <span onClick={() => dispatch(push('/signup'))} style={{textDecoration: 'underline', color: '#3377cc', cursor: 'pointer'}}>here</span></p>
                         
-                    {/* </a> */}
                 </div>
             </div>
         </div>

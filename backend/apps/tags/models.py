@@ -16,7 +16,7 @@ class Tag(models.Model):
     )
 
     description = models.CharField(
-        'Description',blank=True, null=True, max_length= 100
+        'Description', blank=True, null=True, max_length=200
     )
 
     type = models.CharField(
@@ -32,4 +32,3 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
-

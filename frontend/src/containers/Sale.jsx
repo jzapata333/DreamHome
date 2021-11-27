@@ -44,7 +44,7 @@ function Sale() {
                         control and less prepwork. You sell your home as-is and get paid with no surprises, while we
                         take care of the rest.
                     </p>
-                    <h3>Input your information to get counseling.</h3>
+                    <h3>See how much Dream House could get you for your home</h3>
                 </article>
                 <div class="form">
                     <h2>Property Address</h2>

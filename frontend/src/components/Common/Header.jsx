@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import ImgUseIcon from '../../assets/img/icon-user.svg';
-import ImgLogoIcon from '../../assets/img/icon-logo.svg';
+import ImgLogoIcon from '../../assets/img/dh.png';
 import Find from './Find';
 import { push } from 'connected-react-router';
 import Option from './option';

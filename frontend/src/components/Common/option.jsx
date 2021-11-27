@@ -35,17 +35,17 @@ function Option({ setShowOption }) {
                             <img src={ImgUseIcon} alt="" />
                             {checkUser && <p>{user.user_name}</p>}
                         </li>
-                        <li onClick={() => dispatch(push('/saved'))} class="first">
+                        <li onClick={() => dispatch(push('/saved'))} class="first options-li">
                             Favorites
                         </li>
                         {tags && tags.length ? tags.map (t => {
                             if (t.type === 'Sell'){
-                                return <li onClick={() => dispatch(push('/sale'))}>Sell</li>
+                                return <li class="options-li" onClick={() => dispatch(push('/sale'))}>Sell</li>
                             } else {
-                                return (<li onClick={() => dispatch(push(`Search?tag_id=${t.id}&tag_type=${t.type}`))}>{t.type}</li>)
+                                return (<li class="options-li" onClick={() => dispatch(push(`Search?tag_id=${t.id}&tag_type=${t.type}`))}>{t.type}</li>)
                             }
                         }) : ''}
-                        <li onClick={signOutButton}>Log Out</li>
+                        <li class="options-li" onClick={signOutButton}>Log Out</li>
                     </ul>
                 </div>
             </div>
