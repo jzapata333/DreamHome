@@ -3,11 +3,13 @@ export const LOGIN_USER_KEY = 'HOME_LOGIN_USER_KEY';
 const { REACT_APP_ENVIRONMENT, REACT_APP_API_BASE_URL_PROD, REACT_APP_API_BASE_URL_DEV } = process.env;
 let baseURL;
 
-if (REACT_APP_ENVIRONMENT === "PRODUCTION") {
-	baseURL = REACT_APP_API_BASE_URL_PROD;
-} else {
-	baseURL = REACT_APP_API_BASE_URL_DEV;
-}
+// if (REACT_APP_ENVIRONMENT === "PRODUCTION") {
+// 	baseURL = REACT_APP_API_BASE_URL_PROD;
+// } else {
+// 	baseURL = REACT_APP_API_BASE_URL_DEV;
+// }
+
+baseURL = 'https://backend-dreamhome-jz333.herokuapp.com/';
 const api = axios.create({
     baseURL: baseURL,
     headers: {
