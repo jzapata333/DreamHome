@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { signOut } from '../../reducks/users/operations';
 import { getUser } from '../../reducks/users/selectors';
 import { push } from 'connected-react-router';
+import {getTags} from '../../reducks/tags/selectors'
 
 function Option({ setShowOption }) {
     const dispatch = useDispatch();
@@ -12,6 +13,7 @@ function Option({ setShowOption }) {
     const key = localStorage.getItem('HOME_LOGIN_USER_KEY');
     const [checkUser, setCheckUser] = useState(false);
     const user = JSON.parse(localStorage.getItem('HOME_LOGIN_USER_KEY'));
+    const tags = getTags(selector)
 
     const signOutButton = () => {
         dispatch(signOut());
@@ -36,11 +38,13 @@ function Option({ setShowOption }) {
                         <li onClick={() => dispatch(push('/saved'))} class="first">
                             Favorites
                         </li>
-                        <li onClick={() => dispatch(push('/search?tag_id=9'))}>Buy</li>
-                        <li onClick={() => dispatch(push('/sale'))}>Sell</li>
-                        <li onClick={() => dispatch(push('/search?tag_id=7'))} class="first">
-                            Rent
-                        </li>
+                        {tags && tags.length ? tags.map (t => {
+                            if (t.type === 'Sell'){
+                                return <li onClick={() => dispatch(push('/sale'))}>Sell</li>
+                            } else {
+                                return (<li onClick={() => dispatch(push(`Search?tag_id=${t.id}&tag_type=${t.type}`))}>{t.type}</li>)
+                            }
+                        }) : ''}
                         <li onClick={signOutButton}>Log Out</li>
                     </ul>
                 </div>
