@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImageBackgroundMain from '../../assets/img/background-main.png';
+import ImageBackgroundMain from '../../assets/img/background-main.jpg';
 import ImgSearchIcon from '../../assets/img/icon-search.svg';
 import { useDispatch } from 'react-redux';
 import { push } from 'connected-react-router';

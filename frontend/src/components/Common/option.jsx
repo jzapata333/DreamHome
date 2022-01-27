@@ -3,6 +3,7 @@ import ImgUseIcon from '../../assets/img/icon-user.svg';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { signOut } from '../../reducks/users/operations';
+import Signin from '../../containers/Signin';
 import { getUser } from '../../reducks/users/selectors';
 import { push } from 'connected-react-router';
 import {getTags} from '../../reducks/tags/selectors'
@@ -33,7 +34,7 @@ function Option({ setShowOption }) {
                     <ul>
                         <li class="first">
                             <img src={ImgUseIcon} alt="" />
-                            {checkUser && <p>{user.user_name}</p>}
+                            {checkUser && <p>{user.user_name}</p> ? <p>{user.user_name}</p> : <p>Welcome! <br/>Please Sign in</p>}
                         </li>
                         <li onClick={() => dispatch(push('/saved'))} class="first options-li">
                             Favorites
@@ -45,7 +46,7 @@ function Option({ setShowOption }) {
                                 return (<li class="options-li" onClick={() => dispatch(push(`Search?tag_id=${t.id}&tag_type=${t.type}`))}>{t.type}</li>)
                             }
                         }) : ''}
-                        <li class="options-li" onClick={signOutButton}>Log Out</li>
+                        {checkUser && <p>{user.user_name}</p> ? <li class="options-li" onClick={signOutButton}>Sign Out</li> : <li class="options-li" onClick={signOutButton}>Sign in</li>}
                     </ul>
                 </div>
             </div>
