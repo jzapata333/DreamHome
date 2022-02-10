@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageBackgroundSale from '../../assets/img/backkground-sell.png';
+import ImageBackgroundSale from '../../assets/img/background-sell2.jpg';
 
 function SaleImage() {
     return (

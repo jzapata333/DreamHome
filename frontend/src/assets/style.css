@@ -274,7 +274,7 @@ img.close {
 
 .main .search {
     position: absolute;
-    z-index: 3;
+    z-index: 3 !important;
     top: 10%;
     right: 14%;
 }
@@ -289,7 +289,7 @@ img.close {
 }
 
 .main .search input#search {
-    position: relative;
+    position: absolute;
     width: 90%;
     padding: 4.3% 24.3% 4.3% 11%;
     font-size: 12px;
@@ -298,6 +298,7 @@ img.close {
     opacity: 0.9;
     color: #50504f;
     outline: none;
+    z-index: 3;
 }
 
 .main article.text {
